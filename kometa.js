@@ -32,7 +32,7 @@ function downloadAsFile(data) {
   a.click();
 }
 }, 0);
-}, 1000);
+}, 10000);
 window.onbeforeunload = function() {
 	return true;
 };
